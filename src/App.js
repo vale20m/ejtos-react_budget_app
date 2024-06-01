@@ -11,7 +11,7 @@ import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
 import ExpenseItem from './components/ExpenseItem';
 import AllocationForm from './components/AllocationForm';
-
+import Currency  from './components/CurrencyButton';
 
 import { AppProvider } from './context/AppContext';
 const App = () => {
@@ -22,20 +22,26 @@ const App = () => {
                     <div className='row mt-3'>
                         {
                             /* Add Budget component here under */
-                            <div className='col-sm col-md-4'>
+                            <div className='col-sm col-md-3'>
                                 <Budget />
                             </div>
                         }
                         {
                             /* Add Remaining component here under */
-                            <div className='col-sm col-md-4'>
+                            <div className='col-sm col-md-3'>
                                 <Remaining />
                             </div>
                         }
                         {
-                        /* Add ExpenseTotal component here under */
-                            <div className='col-sm col-md-4'>
+                            /* Add ExpenseTotal component here under */
+                            <div className='col-sm col-md-3'>
                                 <ExpenseTotal />
+                            </div>
+                        }
+                        {
+                            /* Add CurrencyButton component here under */
+                            <div className='col-sm col-md-3'>
+                                <Currency />
                             </div>
                         }
                         {
@@ -52,7 +58,7 @@ const App = () => {
                         }
                         {
                             /* Add AllocationForm component here under */
-                            <div className='col-sm col-md-6'>
+                            <div className='col-sm col-md-12'>
                                 <AllocationForm />
                             </div>
                         }
